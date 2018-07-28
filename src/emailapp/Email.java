@@ -43,13 +43,13 @@ public class Email {
     }
 
     private String setPassword(int lengthPassword) {
-        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwXYZ1234567890?!#$%&";//een char set om uit te kiezen
-        char[] password = new char[lengthPassword];                                                 //char array om te vullen
+        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwXYZ1234567890?!#$%&";//een char set to choose from
+        char[] password = new char[lengthPassword];                                                 //char array to fill
         for (int i = 0; i < lengthPassword; i++) {
-            int randomNmber = (int) (Math.random() * passwordSet.length());                         //rondom nummer tussen 0 en 1 maal lengte v.d. set
-            password[i] = passwordSet.charAt(randomNmber);                                          //match random nummer met index v.d. set en voeg toe
-        }                                                                                           //aan het paswoord
-        return new String(password);                                                                //geef paswoord terug
+            int randomNmber = (int) (Math.random() * passwordSet.length());                         //random number between 0 and 1 times set length
+            password[i] = passwordSet.charAt(randomNmber);                                          //match random number with index from set and add it
+        }                                                                                           //to password
+        return new String(password);                                                                //return password
     }
 
     public void setmailboxCapacity(int mailboxCapacity) {
