@@ -84,5 +84,6 @@ public class Email {
                 "department= " + department + "\n" +
                 "mailboxCapacity= " + mailboxCapacity + " mbyte\n" +
                 "email= " + email + "\n";
+
     }
 }
